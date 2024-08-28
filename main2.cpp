@@ -1,29 +1,32 @@
 #include <iostream>
 #include <vector>
-#include "functions2.cpp"
+#include "functions3.hpp"
 
 using namespace std;
-
-// to compare strings
-int strcmp_case_insensitive (string,string);
-// to get rid of blank spaces
-void prepare (string,string);
-// to get strings
-void get_user (string &,string &);
 
 
 int main () {
 
-    vector<char> input3;
-    vector<char> input4;
+    mydata* var1 = new mydata(5);
+    mydata* var2 = new mydata(2);
+
+    var1->strcmpA();
+    var2->strcmpA();
+
+
+
+
+
+//    strcmpA inputs;
+
 
 //    while (input != "q") {                      // loop for multiple comparisons
 
-        get_user(&input3,&input4);                          // get user inputs
+//        get_user(&input3,&input4);                          // get user inputs
 
-        prepare(&input3,&input4);                         // prepare by removing blanks
+//        prepare(&input3,&input4);                         // prepare by removing blanks
 
-        for (char c:input3) cout << input3[c];
+//        for (char c:input3) cout << input3[c];
 
 //        cout << strcmp_case_insensitive(&input3,&input4);   // return value for matching
 
